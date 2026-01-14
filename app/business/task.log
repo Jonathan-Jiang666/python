@@ -1,0 +1,165 @@
+2025-09-21 19:20:13,996 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-21 19:20:14,002 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-21 19:20:14,002 - INFO - Added job "MyTastToList.job1" to job store "default"
+2025-09-21 19:20:14,003 - INFO - Added job "MyTastToList.job2" to job store "default"
+2025-09-21 19:20:14,003 - INFO - Scheduler started
+2025-09-21 19:20:14,003 - INFO - The schedulter task has been started
+2025-09-21 19:20:19,001 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:18 IST)" (scheduled at 2025-09-21 19:20:18.996252+01:00)
+2025-09-21 19:20:19,001 - INFO - [2025-09-21 19:20:19.001906] 多任务测试 -execute job1
+2025-09-21 19:20:19,002 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:23 IST)" executed successfully
+2025-09-21 19:20:24,001 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:28 IST)" (scheduled at 2025-09-21 19:20:23.996252+01:00)
+2025-09-21 19:20:24,002 - INFO - [2025-09-21 19:20:24.002180] 多任务测试 -execute job1
+2025-09-21 19:20:24,002 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:28 IST)" executed successfully
+2025-09-21 19:20:29,001 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:33 IST)" (scheduled at 2025-09-21 19:20:28.996252+01:00)
+2025-09-21 19:20:29,002 - INFO - [2025-09-21 19:20:29.002261] 多任务测试 -execute job1
+2025-09-21 19:20:29,002 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:33 IST)" executed successfully
+2025-09-21 19:20:34,001 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:38 IST)" (scheduled at 2025-09-21 19:20:33.996252+01:00)
+2025-09-21 19:20:34,002 - INFO - [2025-09-21 19:20:34.002376] 多任务测试 -execute job1
+2025-09-21 19:20:34,002 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:38 IST)" executed successfully
+2025-09-21 19:20:39,001 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:43 IST)" (scheduled at 2025-09-21 19:20:38.996252+01:00)
+2025-09-21 19:20:39,001 - INFO - [2025-09-21 19:20:39.001492] 多任务测试 -execute job1
+2025-09-21 19:20:39,001 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:43 IST)" executed successfully
+2025-09-21 19:20:44,000 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:48 IST)" (scheduled at 2025-09-21 19:20:43.996252+01:00)
+2025-09-21 19:20:44,001 - INFO - [2025-09-21 19:20:44.001154] 多任务测试 -execute job1
+2025-09-21 19:20:44,001 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:48 IST)" executed successfully
+2025-09-21 19:20:49,000 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:53 IST)" (scheduled at 2025-09-21 19:20:48.996252+01:00)
+2025-09-21 19:20:49,001 - INFO - [2025-09-21 19:20:49.000985] 多任务测试 -execute job1
+2025-09-21 19:20:49,001 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:53 IST)" executed successfully
+2025-09-21 19:20:54,001 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:58 IST)" (scheduled at 2025-09-21 19:20:53.996252+01:00)
+2025-09-21 19:20:54,002 - INFO - [2025-09-21 19:20:54.002202] 多任务测试 -execute job1
+2025-09-21 19:20:54,002 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:20:58 IST)" executed successfully
+2025-09-21 19:20:59,001 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:21:03 IST)" (scheduled at 2025-09-21 19:20:58.996252+01:00)
+2025-09-21 19:20:59,001 - INFO - [2025-09-21 19:20:59.001457] 多任务测试 -execute job1
+2025-09-21 19:20:59,001 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:21:03 IST)" executed successfully
+2025-09-21 19:21:04,001 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:21:08 IST)" (scheduled at 2025-09-21 19:21:03.996252+01:00)
+2025-09-21 19:21:04,002 - INFO - [2025-09-21 19:21:04.002180] 多任务测试 -execute job1
+2025-09-21 19:21:04,002 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:21:08 IST)" executed successfully
+2025-09-21 19:21:09,001 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:21:13 IST)" (scheduled at 2025-09-21 19:21:08.996252+01:00)
+2025-09-21 19:21:09,002 - INFO - [2025-09-21 19:21:09.002223] 多任务测试 -execute job1
+2025-09-21 19:21:09,002 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:21:13 IST)" executed successfully
+2025-09-21 19:21:14,001 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:21:18 IST)" (scheduled at 2025-09-21 19:21:13.996252+01:00)
+2025-09-21 19:21:14,001 - INFO - [2025-09-21 19:21:14.001817] 多任务测试 -execute job1
+2025-09-21 19:21:14,002 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:21:18 IST)" executed successfully
+2025-09-21 19:21:19,000 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:21:23 IST)" (scheduled at 2025-09-21 19:21:18.996252+01:00)
+2025-09-21 19:21:19,000 - INFO - [2025-09-21 19:21:19.000865] 多任务测试 -execute job1
+2025-09-21 19:21:19,000 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-21 19:21:23 IST)" executed successfully
+2025-09-21 19:21:19,017 - INFO - Scheduler has been shut down
+2025-09-21 19:21:19,017 - INFO - Scheduler has been stopped
+2025-09-21 19:25:08,755 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-21 19:25:08,755 - INFO - Added job "MyTastToList.job2" to job store "default"
+2025-09-21 19:25:08,755 - INFO - Scheduler started
+2025-09-21 19:25:08,755 - INFO - The schedulter task has been started
+2025-09-21 19:26:00,002 - INFO - Running job "MyTastToList.job2 (trigger: cron[hour='19', minute='26'], next run at: 2025-09-21 19:26:00 IST)" (scheduled at 2025-09-21 19:26:00+01:00)
+2025-09-21 19:26:00,003 - INFO - [2025-09-21 19:26:00.003414]多任务测试 -execute job2
+2025-09-21 19:26:00,003 - INFO - Job "MyTastToList.job2 (trigger: cron[hour='19', minute='26'], next run at: 2025-09-22 19:26:00 IST)" executed successfully
+2025-09-21 19:26:09,616 - INFO - Scheduler has been shut down
+2025-09-21 19:26:09,617 - INFO - Scheduler has been stopped
+2025-09-24 15:36:02,717 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-24 15:36:02,723 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-09-24 15:36:02,724 - INFO - Added job "MyTastToList.job1" to job store "default"
+2025-09-24 15:36:02,724 - INFO - Added job "MyTastToList.job2" to job store "default"
+2025-09-24 15:36:02,724 - INFO - Scheduler started
+2025-09-24 15:36:02,724 - INFO - The schedulter task has been started
+2025-09-24 15:36:07,721 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-24 15:36:07 IST)" (scheduled at 2025-09-24 15:36:07.717759+01:00)
+2025-09-24 15:36:07,722 - INFO - [2025-09-24 15:36:07.722395] 多任务测试 -execute job1
+2025-09-24 15:36:07,722 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-24 15:36:12 IST)" executed successfully
+2025-09-24 15:36:12,721 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-24 15:36:17 IST)" (scheduled at 2025-09-24 15:36:12.717759+01:00)
+2025-09-24 15:36:12,721 - INFO - [2025-09-24 15:36:12.721475] 多任务测试 -execute job1
+2025-09-24 15:36:12,721 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-24 15:36:17 IST)" executed successfully
+2025-09-24 15:36:17,720 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-24 15:36:22 IST)" (scheduled at 2025-09-24 15:36:17.717759+01:00)
+2025-09-24 15:36:17,720 - INFO - [2025-09-24 15:36:17.720843] 多任务测试 -execute job1
+2025-09-24 15:36:17,721 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-24 15:36:22 IST)" executed successfully
+2025-09-24 15:36:22,721 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-24 15:36:27 IST)" (scheduled at 2025-09-24 15:36:22.717759+01:00)
+2025-09-24 15:36:22,721 - INFO - [2025-09-24 15:36:22.721424] 多任务测试 -execute job1
+2025-09-24 15:36:22,721 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-24 15:36:27 IST)" executed successfully
+2025-09-24 15:36:27,722 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-24 15:36:32 IST)" (scheduled at 2025-09-24 15:36:27.717759+01:00)
+2025-09-24 15:36:27,722 - INFO - [2025-09-24 15:36:27.722687] 多任务测试 -execute job1
+2025-09-24 15:36:27,722 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-24 15:36:32 IST)" executed successfully
+2025-09-24 15:36:32,720 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-24 15:36:37 IST)" (scheduled at 2025-09-24 15:36:32.717759+01:00)
+2025-09-24 15:36:32,720 - INFO - [2025-09-24 15:36:32.720661] 多任务测试 -execute job1
+2025-09-24 15:36:32,720 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-24 15:36:37 IST)" executed successfully
+2025-09-24 15:36:37,722 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-24 15:36:42 IST)" (scheduled at 2025-09-24 15:36:37.717759+01:00)
+2025-09-24 15:36:37,723 - INFO - [2025-09-24 15:36:37.722947] 多任务测试 -execute job1
+2025-09-24 15:36:37,723 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-09-24 15:36:42 IST)" executed successfully
+2025-09-24 15:36:42,539 - INFO - Scheduler has been shut down
+2025-09-24 15:36:42,539 - INFO - Scheduler has been stopped
+2025-10-26 13:55:52,786 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-26 13:55:52,791 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-10-26 13:55:52,792 - INFO - Added job "MyTastToList.job1" to job store "default"
+2025-10-26 13:55:52,792 - INFO - Added job "MyTastToList.job2" to job store "default"
+2025-10-26 13:55:52,792 - INFO - Scheduler started
+2025-10-26 13:55:52,792 - INFO - The schedulter task has been started
+2025-10-26 13:55:57,789 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:55:57 GMT)" (scheduled at 2025-10-26 13:55:57.786282+00:00)
+2025-10-26 13:55:57,789 - INFO - [2025-10-26 13:55:57.789819] 多任务测试 -execute job1
+2025-10-26 13:55:57,790 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:02 GMT)" executed successfully
+2025-10-26 13:56:02,788 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:07 GMT)" (scheduled at 2025-10-26 13:56:02.786282+00:00)
+2025-10-26 13:56:02,789 - INFO - [2025-10-26 13:56:02.789297] 多任务测试 -execute job1
+2025-10-26 13:56:02,789 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:07 GMT)" executed successfully
+2025-10-26 13:56:07,791 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:12 GMT)" (scheduled at 2025-10-26 13:56:07.786282+00:00)
+2025-10-26 13:56:07,792 - INFO - [2025-10-26 13:56:07.792218] 多任务测试 -execute job1
+2025-10-26 13:56:07,792 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:12 GMT)" executed successfully
+2025-10-26 13:56:12,790 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:17 GMT)" (scheduled at 2025-10-26 13:56:12.786282+00:00)
+2025-10-26 13:56:12,791 - INFO - [2025-10-26 13:56:12.790958] 多任务测试 -execute job1
+2025-10-26 13:56:12,791 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:17 GMT)" executed successfully
+2025-10-26 13:56:17,787 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:22 GMT)" (scheduled at 2025-10-26 13:56:17.786282+00:00)
+2025-10-26 13:56:17,787 - INFO - [2025-10-26 13:56:17.787750] 多任务测试 -execute job1
+2025-10-26 13:56:17,787 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:22 GMT)" executed successfully
+2025-10-26 13:56:22,791 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:27 GMT)" (scheduled at 2025-10-26 13:56:22.786282+00:00)
+2025-10-26 13:56:22,792 - INFO - [2025-10-26 13:56:22.792261] 多任务测试 -execute job1
+2025-10-26 13:56:22,792 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:27 GMT)" executed successfully
+2025-10-26 13:56:27,787 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:32 GMT)" (scheduled at 2025-10-26 13:56:27.786282+00:00)
+2025-10-26 13:56:27,787 - INFO - [2025-10-26 13:56:27.787829] 多任务测试 -execute job1
+2025-10-26 13:56:27,788 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:32 GMT)" executed successfully
+2025-10-26 13:56:32,789 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:37 GMT)" (scheduled at 2025-10-26 13:56:32.786282+00:00)
+2025-10-26 13:56:32,789 - INFO - [2025-10-26 13:56:32.789352] 多任务测试 -execute job1
+2025-10-26 13:56:32,789 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:37 GMT)" executed successfully
+2025-10-26 13:56:37,791 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:42 GMT)" (scheduled at 2025-10-26 13:56:37.786282+00:00)
+2025-10-26 13:56:37,791 - INFO - [2025-10-26 13:56:37.791744] 多任务测试 -execute job1
+2025-10-26 13:56:37,791 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:42 GMT)" executed successfully
+2025-10-26 13:56:42,790 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:47 GMT)" (scheduled at 2025-10-26 13:56:42.786282+00:00)
+2025-10-26 13:56:42,790 - INFO - [2025-10-26 13:56:42.790539] 多任务测试 -execute job1
+2025-10-26 13:56:42,790 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:47 GMT)" executed successfully
+2025-10-26 13:56:47,789 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:52 GMT)" (scheduled at 2025-10-26 13:56:47.786282+00:00)
+2025-10-26 13:56:47,789 - INFO - [2025-10-26 13:56:47.789669] 多任务测试 -execute job1
+2025-10-26 13:56:47,789 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:52 GMT)" executed successfully
+2025-10-26 13:56:52,790 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:57 GMT)" (scheduled at 2025-10-26 13:56:52.786282+00:00)
+2025-10-26 13:56:52,790 - INFO - [2025-10-26 13:56:52.790324] 多任务测试 -execute job1
+2025-10-26 13:56:52,790 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:56:57 GMT)" executed successfully
+2025-10-26 13:56:57,790 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:02 GMT)" (scheduled at 2025-10-26 13:56:57.786282+00:00)
+2025-10-26 13:56:57,790 - INFO - [2025-10-26 13:56:57.790451] 多任务测试 -execute job1
+2025-10-26 13:56:57,790 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:02 GMT)" executed successfully
+2025-10-26 13:57:02,789 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:07 GMT)" (scheduled at 2025-10-26 13:57:02.786282+00:00)
+2025-10-26 13:57:02,789 - INFO - [2025-10-26 13:57:02.789847] 多任务测试 -execute job1
+2025-10-26 13:57:02,790 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:07 GMT)" executed successfully
+2025-10-26 13:57:07,788 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:12 GMT)" (scheduled at 2025-10-26 13:57:07.786282+00:00)
+2025-10-26 13:57:07,789 - INFO - [2025-10-26 13:57:07.789146] 多任务测试 -execute job1
+2025-10-26 13:57:07,789 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:12 GMT)" executed successfully
+2025-10-26 13:57:12,789 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:17 GMT)" (scheduled at 2025-10-26 13:57:12.786282+00:00)
+2025-10-26 13:57:12,789 - INFO - [2025-10-26 13:57:12.789739] 多任务测试 -execute job1
+2025-10-26 13:57:12,789 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:17 GMT)" executed successfully
+2025-10-26 13:57:17,788 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:22 GMT)" (scheduled at 2025-10-26 13:57:17.786282+00:00)
+2025-10-26 13:57:17,788 - INFO - [2025-10-26 13:57:17.788730] 多任务测试 -execute job1
+2025-10-26 13:57:17,788 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:22 GMT)" executed successfully
+2025-10-26 13:57:22,792 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:27 GMT)" (scheduled at 2025-10-26 13:57:22.786282+00:00)
+2025-10-26 13:57:22,792 - INFO - [2025-10-26 13:57:22.792610] 多任务测试 -execute job1
+2025-10-26 13:57:22,792 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:27 GMT)" executed successfully
+2025-10-26 13:57:27,790 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:32 GMT)" (scheduled at 2025-10-26 13:57:27.786282+00:00)
+2025-10-26 13:57:27,790 - INFO - [2025-10-26 13:57:27.790756] 多任务测试 -execute job1
+2025-10-26 13:57:27,790 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:32 GMT)" executed successfully
+2025-10-26 13:57:32,788 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:37 GMT)" (scheduled at 2025-10-26 13:57:32.786282+00:00)
+2025-10-26 13:57:32,789 - INFO - [2025-10-26 13:57:32.789017] 多任务测试 -execute job1
+2025-10-26 13:57:32,789 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:37 GMT)" executed successfully
+2025-10-26 13:57:37,791 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:42 GMT)" (scheduled at 2025-10-26 13:57:37.786282+00:00)
+2025-10-26 13:57:37,791 - INFO - [2025-10-26 13:57:37.791289] 多任务测试 -execute job1
+2025-10-26 13:57:37,791 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:42 GMT)" executed successfully
+2025-10-26 13:57:42,787 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:47 GMT)" (scheduled at 2025-10-26 13:57:42.786282+00:00)
+2025-10-26 13:57:42,787 - INFO - [2025-10-26 13:57:42.787892] 多任务测试 -execute job1
+2025-10-26 13:57:42,788 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:47 GMT)" executed successfully
+2025-10-26 13:57:47,787 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:52 GMT)" (scheduled at 2025-10-26 13:57:47.786282+00:00)
+2025-10-26 13:57:47,787 - INFO - [2025-10-26 13:57:47.787567] 多任务测试 -execute job1
+2025-10-26 13:57:47,787 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:52 GMT)" executed successfully
+2025-10-26 13:57:52,788 - INFO - Running job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:57 GMT)" (scheduled at 2025-10-26 13:57:52.786282+00:00)
+2025-10-26 13:57:52,789 - INFO - [2025-10-26 13:57:52.789214] 多任务测试 -execute job1
+2025-10-26 13:57:52,789 - INFO - Job "MyTastToList.job1 (trigger: interval[0:00:05], next run at: 2025-10-26 13:57:57 GMT)" executed successfully
+2025-10-26 13:57:53,896 - INFO - Scheduler has been shut down
+2025-10-26 13:57:53,896 - INFO - Scheduler has been stopped
