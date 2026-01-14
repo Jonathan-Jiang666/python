@@ -33,7 +33,9 @@ def main():
     business = UsersBusiness(repo)
     # step 4: Calling the buisness method
     result = business.create_user(user_dto)
-    print("The result of insert:", result)
+    import logging
+    logger = logging.getLogger(__name__)
+    logger.info("The result of insert: %s", result)
 
 
 if __name__ == "__main__":

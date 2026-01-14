@@ -2,29 +2,29 @@
 import sqlite3
 import mysql.connector
 from datetime import datetime
-#引入数据库包
-import pymysql
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class CalenderDB:
-    #Initialization constructor method
-    def __init__(self,db_type="sqlite",db_name="personal_ai_assistant", **kwargs):
+    # Initialization constructor method
+    def __init__(self, db_type="sqlite", db_name="personal_ai_assistant", **kwargs):
         if db_type == "sqlite":
             self.conn = sqlite3.connect(db_name)
-        elif db_type =="mysql":
+        elif db_type == "mysql":
             self.conn = mysql.connector.connect(
-                host=kwargs.get("host","localhost"),
-                user=kwargs.get("user","root"),
-                password=kwargs.get("password","root"),
-                database=kwargs.get("database","personal_ai_assistant")
+                host=kwargs.get("host", "localhost"),
+                user=kwargs.get("user", "root"),
+                password=kwargs.get("password", "root"),
+                database=kwargs.get("database", "personal_ai_assistant"),
             )
         else:
             raise ValueError("Unsupported database type")
         self.cursor = self.conn.cursor()
 
-
     # Insert data function
-    def insert_event(self,event):
+    def insert_event(self, event):
         """Add a new data item"""
         try:
             sql = """
@@ -42,8 +42,8 @@ class CalenderDB:
             create_at=values(create_at);
               """
             self.cursor.execute(sql, event)
-        except sqlite3.integrityError:
-            print(f"Insert data failed,'{event}' already existed ")
+        except sqlite3.IntegrityError:
+            logger.warning("Insert data failed, '%s' already existed", event)
 
     # Delete data function
     def delete_event(self, event):
@@ -54,24 +54,23 @@ class CalenderDB:
         self.cursor.execute(sql, event)
         self.conn.commit()
         if self.cursor.rowcount > 0:
-            print(f"Already delete: {event}")
+            logger.info("Already delete: %s", event)
         else:
-            print(f"No item: {event}")
+            logger.info("No item: %s", event)
 
-    # Selete date function
-    def find_event(self,**kwargs):
-        """ we can use any fields and values to select data from specific table ,for example name = "apple",category="fruit"
-         """
+    # Select data function
+    def find_event(self, **kwargs):
+        """Use kwargs to select rows from calender_events table"""
         if not kwargs:
-            print("there is no enquire conditions")
+            logger.info("there is no enquire conditions")
             return []
-        where_clause = "AND".join([f"{key}=?" for key in kwargs])
-        values  = list(kwargs.values())
-        sql = f"select * from calender_events where (where_clause);"
-        self.cursor.execute(sql,values)
+        where_clause = " AND ".join([f"{key}=?" for key in kwargs])
+        values = list(kwargs.values())
+        sql = f"select * from calender_events where {where_clause};"
+        self.cursor.execute(sql, values)
         return self.cursor.fetchall()
 
 
     def close_conn(self):
-          slef.conn.close()
+        self.conn.close()
 

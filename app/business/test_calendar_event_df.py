@@ -1,9 +1,12 @@
 import unittest
 
 from apscheduler.schedulers.blocking import BlockingScheduler
+import logging
 
 from PersonalAIassistant.app.business.calendar_event_data_fatory import CalendarEventDF
 from PersonalAIassistant.app.models_oma.calendar_events_bean import CalendarEvent
+
+logger = logging.getLogger(__name__)
 
 class TestCalendarEventDataFatory (unittest.TestCase):
 
@@ -22,7 +25,7 @@ class TestCalendarEventDataFatory (unittest.TestCase):
         obj = CalendarEventDF()
         calendars = obj.get_calendars ()
         calendarEvents = obj.original_calendar_data_process (calendars)
-        print("TestCalendarEvent account of array is ", len(calendarEvents))
+        logger.info("TestCalendarEvent account of array is %d", len(calendarEvents))
         obj.iteration_CalendarArray_To_Table(calendarEvents)
         self.job()
 

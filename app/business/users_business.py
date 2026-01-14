@@ -17,22 +17,26 @@ class UsersBusiness:
         return self.insert_user(user)
 
 
+import logging
 
-#单独调试的方法
-if __name__=="__main__":
+logger = logging.getLogger(__name__)
+
+
+# 单独调试的方法
+if __name__ == "__main__":
     # step 1: Ready for creating an DTO
-    user_dto= UserCreateDTO(
+    user_dto = UserCreateDTO(
         username="Jonathan",
         email="123456@example.com",
         passwordhash="111111",
-        phonenumber="871042222"
+        phonenumber="871042222",
     )
     # step 2: Ready for a Repository
     repo = UserDataProcess()
     # step 3: Ready for a business example
-    business  = UsersBusiness(repo)
+    business = UsersBusiness(repo)
     # step 4: Calling the buisness method
     result = business.create_user(user_dto)
-    print("The result of insert:", result)
+    logger.info("The result of insert: %s", result)
 
 

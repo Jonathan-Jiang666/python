@@ -1,5 +1,9 @@
 import time
-from PersonalAIassistant.app.business.my_task_list import MyTastToList
+from .my_task_list import MyTastToList
+from .. import config
+
+# ensure logging is initialized
+config.init_logging()
 
 if __name__ == "__main__":
     #task = MyTask("多任务测试")

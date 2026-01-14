@@ -1,5 +1,9 @@
 from app.database.db import Base, engine, SessionLocal
+import logging
+
+logger = logging.getLogger(__name__)
+
 Base.metadata.create_all(bind=engine)
 db = SessionLocal()
-print("导入成功，数据库连接可用")
+logger.info("Database metadata created and session opened successfully")
 db.close()

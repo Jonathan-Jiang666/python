@@ -1,8 +1,8 @@
 import os
 from dotenv import load_dotenv
 
-#loading the variable environment
+# load environment from .env if present
 load_dotenv()
 
-#Gmail API config
-CREDENTIALS_FILE = os.getenv('CREDENTIALS_FILE','credentials.json')
+# Gmail API config - prefer centralized env name
+CREDENTIALS_FILE = os.getenv('GOOGLE_CREDENTIALS_PATH', os.getenv('CREDENTIALS_FILE', 'credentials.json'))

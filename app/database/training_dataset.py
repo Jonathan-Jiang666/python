@@ -1,10 +1,13 @@
 from datetime import datetime, date, timedelta
-from PersonalAIassistant.app.database.ai_emails_dp import AIEmailDataProcess
-from PersonalAIassistant.app.database.calendar_events_dp import CalenderEventsDataProcess
-from PersonalAIassistant.app.database.course_schedule_dp import CourseScheduleDataProcess
-from PersonalAIassistant.app.database.weather_db import WeatherDataProcess
+from ..database.ai_emails_dp import AIEmailDataProcess
+from ..database.calendar_events_dp import CalenderEventsDataProcess
+from ..database.course_schedule_dp import CourseScheduleDataProcess
+from ..database.weather_db import WeatherDataProcess
 import pandas as pd
 from sqlalchemy import text
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class TrainingDatasetProcess:
@@ -25,7 +28,7 @@ class TrainingDatasetProcess:
         weather = self.weather_proc.get_weather_data_by_time(since_ts)
 
         # 2 transfer to DataFrame
-        eamil_df = pd.DataFrame([e.__dict__ for e in emails])
+        email_df = pd.DataFrame([e.__dict__ for e in emails])
         event_df = pd.DataFrame([e.__dict__ for e in events])
         course_df = pd.DataFrame([e.__dict__ for e in courses])
         weather_df = pd.DataFrame([e.__dict__ for e in weather])
@@ -37,14 +40,17 @@ class TrainingDatasetProcess:
         timeline_df = pd.DataFrame({"timestamp": time_grid})
 
         # align the data source , use merge_asof
-        merged = pd.merge_asof (timeline_df , weather_df , on="timestamp" , direction="backward")
+        merged = pd.merge_asof(timeline_df, weather_df, on="timestamp", direction="backward")
         merged = pd.merge_asof(merged, email_df, on="timestamp", direction="backward")
-        merged = pd.merge_asof(merged,event_df, on="timestamp", direction="backward")
-        merged = pd.merge_asof(merged,course_df,on="timestamp",direction="backward")
+        merged = pd.merge_asof(merged, event_df, on="timestamp", direction="backward")
+        merged = pd.merge_asof(merged, course_df, on="timestamp", direction="backward")
 
 
         # feature engineering
-        merged["is_free"] = merged["event_type"].isna() & merged["course_df"].isna()
+        # defensive: some columns may be missing depending on upstream data
+        is_event_na = merged.get('event_type').isna() if 'event_type' in merged else True
+        is_course_na = merged.get('course_id').isna() if 'course_id' in merged else True
+        merged["is_free"] = is_event_na & is_course_na
 
         return merged
 
@@ -55,15 +61,15 @@ class TrainingDatasetProcess:
             )
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     assemble = TrainingDatasetProcess(
-        email_proc = AIEmailDataProcess(),
-        calendar_proc = CalenderEventsDataProcess(),
-        course_proc = CourseScheduleDataProcess(),
-        weather_proc = WeatherDataProcess()
+        email_proc=AIEmailDataProcess(),
+        calendar_proc=CalenderEventsDataProcess(),
+        course_proc=CourseScheduleDataProcess(),
+        weather_proc=WeatherDataProcess(),
     )
-    dataset  = assemble.assemble_dataset(datetime.now() - timedelta(hours=6))
-    print(dataset.head(10))
+    dataset = assemble.assemble_dataset(datetime.now() - timedelta(hours=6))
+    logger.info(dataset.head(10))
 
 
 

@@ -1,15 +1,17 @@
-from PersonalAIassistant.app.models_oma.ai_email_attachements_bean import AIEmailAttachments
+from ..models_oma.ai_email_attachements_bean import AIEmailAttachments
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from db import Base, engine, SessionLocal
-import mysql.connector
+from .db import Base, engine, SessionLocal
+import logging
+
+logger = logging.getLogger(__name__)
+
 
 class AIEmailAttachmentsDataProcess:
     def __init__(self):
         Base.metadata.create_all(bind=engine)
-        self.session = SessionLocal ()
-        print("导入成功，数据库连接可用")
-        # db.close()
+        self.session = SessionLocal()
+        logger.info("Database session created for AIEmailAttachmentsDataProcess")
 
     #def __int__(self, user, password, host, database):
         """
